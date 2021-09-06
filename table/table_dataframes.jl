@@ -1,7 +1,7 @@
 import DataFrames
 
 function table(df::DataFrames.DataFrame; args...) :: String
-  grh.table(class="table"; args...) do
+  grh.table(; class="table", args...) do
     grh.thead() do
       grh.tr() do
         grh.collection(names(df)) do item
